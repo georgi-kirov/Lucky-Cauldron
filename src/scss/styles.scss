@@ -44,19 +44,21 @@
                 height: 8vh;
                 width: 35vh;
             }
-        .offer {
-            position: absolute;
-            top: 12vh;
-            width: 90%;
-        }
 
-        .cta-button {
-            top: 93%;
-            position: absolute;
-            left: 50%;
-            width: 60%;
-            transform: translate(-50%, -50%);
-        }
+            .offer {
+                position: absolute;
+                top: 12vh;
+                width: 90%;
+                left: 5vw;
+            }
+
+            .cta-button {
+                top: 93%;
+                position: absolute;
+                left: 50%;
+                width: 60%;
+                transform: translate(-50%, -50%);
+            }
         
     }
 
