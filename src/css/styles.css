@@ -1,6 +1,7 @@
 .container {
   padding: 0;
   overflow: hidden;
+  position: relative;
 }
 .container .text-on-top {
   color: white;
@@ -65,47 +66,44 @@
   font-weight: 500;
 }
 
-@media (min-width: 992px) and (max-width: 1800px) {
+@media (min-width: 768px) and (max-width: 1600px) {
   .container .text-on-top {
     position: absolute;
     z-index: 2;
-    right: 20vw;
+    right: 5%;
     background: none;
-    font-size: 0.6rem;
-    top: 6vh;
+    font-size: 0.8rem;
+    top: 4%;
   }
   .container .text-on-top img {
     width: 1rem;
   }
   .container .center-images .background-image {
     background-image: url("../assets/images/LP-Lucky-Cauldron_bgr_PC.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 83vh;
   }
-  .container .center-images .orange-header {
+  .container .center-images .background-image .orange-header {
     background-image: url("../assets/images/header.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 10vw;
+    height: 20%;
   }
-  .container .center-images .logo-img {
-    top: 6vh;
-    left: 18vw;
+  .container .center-images .background-image .logo-img {
+    left: 25vw;
     z-index: 2;
-    height: 6vh;
-    width: 20%;
     transform: translate(-50%, -50%);
   }
-  .container .center-images .offer {
+  .container .center-images .background-image .offer {
     position: absolute;
     top: 27%;
-    width: 40vh;
-    left: 20vh;
+    width: 25%;
+    left: 15%;
   }
-  .container .center-images .cta-button {
+  .container .center-images .background-image .cta-button {
     top: 72%;
     position: absolute;
     left: 27%;
@@ -117,6 +115,11 @@
   }
   .container .footer p.text {
     font-size: 0.6rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container .center-images .background-image {
+    height: 70vh;
   }
 }
 
